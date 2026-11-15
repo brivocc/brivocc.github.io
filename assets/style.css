@@ -127,3 +127,21 @@ h2 { font-size: clamp(1.7rem, 3vw, 2.4rem); letter-spacing: -.02em; line-height:
 }
 @media (prefers-reduced-motion: reduce) { * { transition: none !important; scroll-behavior: auto !important; } }
 h1 .hi { display: block; font-size: .5em; color: var(--muted); letter-spacing: 0; margin-bottom: .35rem; }
+
+/* More projects */
+.cards { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
+.pcard { background: #fff; border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; display: flex; flex-direction: column; transition: transform .2s, box-shadow .2s; }
+.pcard:hover { transform: translateY(-4px); box-shadow: var(--shadow); }
+.pimg { display: block; border-bottom: 1px solid var(--line); overflow: hidden; }
+.pimg img { aspect-ratio: 16 / 10; object-fit: cover; object-position: top; width: 100%; transition: transform .4s; }
+.pcard:hover .pimg img { transform: scale(1.03); }
+.pbody { padding: 1.2rem 1.3rem 1.3rem; display: flex; flex-direction: column; gap: .6rem; flex: 1; }
+.pbody h3 { margin: 0; font-size: 1.12rem; }
+.pbody p { margin: 0; color: var(--muted); }
+.plinks { display: flex; gap: 1rem; margin-top: auto; padding-top: .4rem; }
+.plinks a { font-weight: 700; text-decoration: none; }
+.plinks a:hover { text-decoration: underline; }
+.also { margin-top: 2rem; background: #fff; border: 1px dashed #c9cfdd; border-radius: var(--radius); padding: 1.1rem 1.3rem; }
+.also h3 { margin: 0 0 .3rem; font-size: 1rem; }
+.also p { margin: 0; color: var(--muted); }
+@media (max-width: 760px) { .cards { grid-template-columns: 1fr; } }
