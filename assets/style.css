@@ -145,3 +145,5 @@ h1 .hi { display: block; font-size: .5em; color: var(--muted); letter-spacing: 0
 .also h3 { margin: 0 0 .3rem; font-size: 1rem; }
 .also p { margin: 0; color: var(--muted); }
 @media (max-width: 760px) { .cards { grid-template-columns: 1fr; } }
+.also p + p { margin-top: .7rem; }
+.also code { font-family: "JetBrains Mono", monospace; font-size: .85em; background: #eef0fb; color: #3730a3; padding: .05rem .3rem; border-radius: 4px; }
